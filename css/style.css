@@ -73,7 +73,7 @@ header {
 .module {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #F6F6F6;
     margin: 2rem auto;
     padding: 2rem 0;
@@ -91,6 +91,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 4rem;
 }
 
 .card-generator {
@@ -113,7 +114,7 @@ header {
     font-size: 1.2rem;
 }
 
-.right-module {
+.right-module, .left-module {
     width: 380px;
 }
 
@@ -174,4 +175,8 @@ footer {
 
 .regenerate-card{
     margin-top: 2rem;
+}
+
+.random-card:hover, .card-generator:hover {
+    cursor: pointer;
 }
