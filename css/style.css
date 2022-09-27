@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700;900&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: 'Noto Sans', Helvetica, sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #B75454;
+    color: #fff;
+    display: flex;
+    height: 94px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.logo h3 {
+    margin-left: 8.4rem;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+.nav-right {
+    display: flex;
+    margin-right: 8.4rem;
+    align-items: center;
+}
+
+.theme-toggler {
+    background-color: #63E6D4;
+    color: #444444;
+    padding: 0.3rem 0.8rem;
+    display: flex;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+.theme-toggler .active {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 0.3rem;
+    margin: 0 0.2rem;
+}
+
+.theme-toggler .inactive {
+    padding: 0.3rem;
+}
+
+#moon-icon {
+    margin-left: 0.3rem;
+}
+
+#sun-icon {
+    margin-right: 0.3rem;
+}
+
+.title {
+    text-align: center;
+    margin: 2.8rem 0;
+}
+.title h1 {
+    font-weight: 400;
+}
+
+.module {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F6F6F6;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    width: 80%;
+    border-radius: .8rem;
+}
+
+.cards-space {
+    height: 14rem;
+    padding-bottom: 4rem;
+}
+
+.left-module, .right-module {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-generator {
+    padding: .6rem 1.5rem;
+    background-color: #B75454;
+    border: #B75454 1px solid;
+    border-radius: .8rem;
+    color: #fff
+}
+
+.instructions-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-module h4, .right-module h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.right-module {
+    width: 380px;
+}
+
+#card-input {
+    border: #444444 1px solid;
+    border-radius: .8rem;
+    width: 18rem;
+    padding: .6rem 1rem;
+}
+
+.instructions-text h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.step {
+    width: 22%;
+    margin: 0 1rem;
+}
+
+.step h2 {
+    font-weight: 300;
+}
+
+.coming-soon {
+    text-align: center;
+    font-weight: 400;
+    margin: 4rem 0;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.random-card {
+    display: flex;
+    align-items: center;
+    margin: -1.4rem auto;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.regenerate-card{
+    margin-top: 2rem;
+}

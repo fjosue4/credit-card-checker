@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <title>Card Checker Tool</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Card Checker Tool</h3>
+        </div>
+        <div class="nav-right">
+            <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
+            <div class="theme-toggler">
+                <iconify-icon icon="charm:sun" id="sun-icon" class="active"></iconify-icon>
+                <iconify-icon icon="charm:moon" id="moon-icon" class="inactive"></iconify-icon>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Welcome to the card checker tool!</h1>
+        </div>
+        <div class="module cards-space">
+            <div class="left-module">
+                <h4>Type or paste a card to check</h4>
+                <input type="text" name="card" id="card-input" placeholder="Card number goes here...">
+            </div>
+        <div class="right-module no-card" id="no-card">
+            <h4>Don't have a card to check?</h4>
+            <button class="card-generator" id="generator-1">Generate random cards</button>
+        </div>
+
+        <div class="right-module generated-card hidden" id="generated-card">
+            <h4>Choose one of these random cards</h4>
+            <div class="random-cards-list">
+                <div class="random-card">
+                    <iconify-icon icon="cib:cc-visa" class="card-icon"></iconify-icon>
+                    <p>41664532716748402609</p>
+                </div>
+                <div class="random-card">
+                    <iconify-icon icon="cib:cc-mastercard" class="card-icon"></iconify-icon>
+                    <p>51664532716748402609</p>
+                </div>
+                <div class="random-card">
+                    <iconify-icon icon="cib:cc-amex" class="card-icon"></iconify-icon>
+                    <p>378282246310005</p>
+                </div>
+            </div>
+            <button class="card-generator regenerate-card" id="generator-2">Generate random cards</button>
+        </div>
+  
+    </div>
+
+        <div class="module">
+            <div class="instructions-text">
+                <h3>How does it work?</h3>
+                <div class="steps">
+                <div class="step">
+                    <h2>Step #1</h2>
+                    <p>Type or past the card number you want to check.</p>
+                </div>
+                <div class="step">
+                    <h2>Step #2</h2>
+                    <p>We analyze the card using the <a href="https://en.wikipedia.org/wiki/Luhn_algorithm" target="_blank">Luhn algorithm</a>.</p>
+                </div>
+                <div class="step">
+                    <h2>Step #3</h2>
+                    <p>The result is displayed on screen determining the validity.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="coming-soon">
+            <h3>Bulk Card Checker (coming soon...)</h3>
+        </div>
+
+        <footer>
+            <p>Designed and developed by Franklin Méndez</p>
+        </footer>
+    </main>
+</body>
+<script src="/js/main.js"></script>
+</html>
