@@ -40,15 +40,30 @@
             <div class="random-cards-list">
                 <div class="random-card">
                     <iconify-icon icon="cib:cc-visa" class="card-icon"></iconify-icon>
-                    <p id="visa-card"></p>
+                    <p id="visa-card" class="card-plaintext"></p>
                 </div>
                 <div class="random-card">
                     <iconify-icon icon="cib:cc-mastercard" class="card-icon"></iconify-icon>
-                    <p id="mastercard-card"></p>
+                    <p id="mastercard-card" class="card-plaintext"></p>
                 </div>
                 <div class="random-card">
                     <iconify-icon icon="cib:cc-amex" class="card-icon"></iconify-icon>
-                    <p id="amex-card"></p>
+                    <p id="amex-card" class="card-plaintext"></p>
+                </div>
+            </div>
+            <button class="card-generator regenerate-card" id="generator-2">Generate random cards</button>
+        </div>
+
+        <div class="right-module validate-card hidden" id="validate-card">
+            <h4>Result</h4>
+            <div class="random-cards-list">
+                <div class="card-brand">
+                    <div id="card-brand-logo"></div>
+                    <p id="card-brand-text"></p>
+                </div>
+                <div class="card-validity">
+                    <div id="card-validity-icon"></div>
+                    <p id="card-validity-text"></p>
                 </div>
             </div>
             <button class="card-generator regenerate-card" id="generator-2">Generate random cards</button>

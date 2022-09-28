@@ -1,12 +1,18 @@
 // DOM elements and functions
 
-let generatorButton1 = document.getElementById('generator-1');
-let generatorButton2 = document.getElementById('generator-2');
-let noCard = document.getElementById('no-card');
-let generatedCard = document.getElementById('generated-card');
-let visaCard = document.getElementById('visa-card');
-let masterCard = document.getElementById('mastercard-card');
-let amexCard = document.getElementById('amex-card');
+const generatorButton1 = document.getElementById('generator-1');
+const generatorButton2 = document.getElementById('generator-2');
+const noCard = document.getElementById('no-card');
+const generatedCard = document.getElementById('generated-card');
+const visaCard = document.getElementById('visa-card');
+const masterCard = document.getElementById('mastercard-card');
+const amexCard = document.getElementById('amex-card');
+const randomCardDiv = document.getElementsByClassName('random-card');
+const randomCardPlainText = document.getElementsByClassName('card-plaintext')
+const cardInput = document.getElementById('card-input');
+console.log(randomCardDiv);
+console.log(randomCardPlainText);
+
 
 function switchDisplayStep2() {
     createCards();
@@ -32,6 +38,17 @@ function newCard () {
 
 generatorButton1.addEventListener("click", switchDisplayStep2);
 generatorButton2.addEventListener("click", generateNewCards);
+
+for(let i=0; i<randomCardDiv.length; i++){
+  randomCardDiv[i].addEventListener("click", () => {
+    cardInput.value = randomCardPlainText[i].outerText;
+    });
+}
+
+// cardInput.addEventListener()
+
+function cardValidationResults() {
+}
 
 // Card Validator
 
@@ -82,7 +99,7 @@ function createMasterCard() {
     case 3:
       card2.push(4)
     break;
-    case 5:
+    case 4:
       card2.push(5)
     break;
     default: card2.push(1)
