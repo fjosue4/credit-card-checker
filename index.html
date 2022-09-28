@@ -14,8 +14,8 @@
             <h3>Card Checker Tool</h3>
         </div>
         <div class="nav-right">
-            <iconify-icon icon="akar-icons:github-fill"></iconify-icon>
-            <div class="theme-toggler">
+            <a href="https://github.com/fjosue4/credit-card-checker" target="_blank"><iconify-icon icon="akar-icons:github-fill"></iconify-icon></a>
+            <div id="theme-toggler">
                 <iconify-icon icon="charm:sun" id="sun-icon" class="active"></iconify-icon>
                 <iconify-icon icon="charm:moon" id="moon-icon" class="inactive"></iconify-icon>
             </div>
@@ -25,10 +25,10 @@
         <div class="title">
             <h1>Welcome to the card checker tool!</h1>
         </div>
-        <div class="module cards-space">
+        <div class="module cards-space" id="cards-module">
             <div class="left-module">
                 <h4>Type or paste a card to check</h4>
-                <input type="text" name="card" id="card-input" placeholder="Card number goes here...">
+                <input type="number" name="card" id="card-input" placeholder="Card number goes here...">
             </div>
         <div class="right-module no-card" id="no-card">
             <h4>Don't have a card to check?</h4>
@@ -55,8 +55,8 @@
         </div>
 
         <div class="right-module validate-card hidden" id="validate-card">
-            <h4>Result</h4>
-            <div class="random-cards-list">
+            <h4 id="result">Result</h4>
+            <div class="random-cards-list results">
                 <div class="card-brand">
                     <div id="card-brand-logo"></div>
                     <p id="card-brand-text"></p>
@@ -66,12 +66,12 @@
                     <p id="card-validity-text"></p>
                 </div>
             </div>
-            <button class="card-generator regenerate-card" id="generator-2">Generate random cards</button>
+            <button class="card-generator" id="clear-input">Generate more random cards</button>
         </div>
   
     </div>
 
-        <div class="module">
+        <div class="module" id="instructions-module">
             <div class="instructions-text">
                 <h3>How does it work?</h3>
                 <div class="steps">

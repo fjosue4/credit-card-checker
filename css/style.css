@@ -9,7 +9,12 @@ html {
 
 body {
     margin: 0;
+    transition: 0.4s;
 }
+
+a {
+    color: inherit;
+} 
 
 header {
     background-color: #B75454;
@@ -20,6 +25,15 @@ header {
     justify-content: space-between;
     width: 100%;
     font-size: 1.5rem;
+}
+
+.dark {
+    color: #fff !important;
+    background: #444444 !important;
+  }
+
+.dark-module {
+    background-color: #545454 !important;
 }
 
 .logo h3 {
@@ -34,7 +48,7 @@ header {
     align-items: center;
 }
 
-.theme-toggler {
+#theme-toggler {
     background-color: #63E6D4;
     color: #444444;
     padding: 0.3rem 0.8rem;
@@ -43,15 +57,21 @@ header {
     margin-left: 1rem;
 }
 
-.theme-toggler .active {
+#theme-toggler .active {
     background-color: #fff;
     border-radius: 100%;
     padding: 0.3rem;
     margin: 0 0.2rem;
+    transition: 0.4s;
 }
 
-.theme-toggler .inactive {
+#theme-toggler .inactive {
     padding: 0.3rem;
+    transition: 0.4s;
+}
+
+#theme-toggler:hover {
+    cursor: pointer;
 }
 
 #moon-icon {
@@ -79,6 +99,12 @@ header {
     padding: 2rem 0;
     width: 80%;
     border-radius: .8rem;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
 }
 
 .cards-space {
@@ -179,4 +205,112 @@ footer {
 
 .random-card:hover, .card-generator:hover {
     cursor: pointer;
+}
+
+.card-brand {
+    margin-top: -1rem;
+}
+
+.card-validity, .card-brand, #card-brand-logo, #card-validity-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success {
+    color: #2dd51f;
+}
+
+.failure {
+    color: #ff6868;
+}
+
+.success, .failure, .alert {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.alert {
+    color: #F2A30F;
+}
+
+.card-validity {
+    margin-bottom: 0.8rem;
+}
+
+#validate-card {
+    text-align: left;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .left-module, .right-module {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .module {
+        flex-direction: column;
+    }
+    .cards-space {
+        height: 18rem;
+    }
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+    .logo h3 {
+        margin-left: 0;
+    }
+    .logo {
+        margin-left: 8%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .nav-right {
+        margin-right: 8%;
+    }
+
+}
+
+@media screen and (max-width: 484px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 184px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: .1rem;
+        margin-left: 0;
+    }
+
+    .nav-rigth {
+        margin-right: 0;
+        margin-bottom: .4rem;
+    }
+
+    .right-module, .left-module {
+        width: 98%;
+    }
+
+    #card-input {
+        width: 84%;
+    }
 }
